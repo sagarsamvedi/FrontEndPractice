@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(229, 226, 226);
+    color: white;
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.center{
+    display: flex;
+    gap:2rem;
+    font-size: 1.3rem;
+}
+.center li{
+    list-style: none;
+}
+.center li:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, red, yellow,green,blue);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    gap: 5px;
+}
+.searchBar input{
+    width: 80%;
+    border: none;
+    padding: 2px;
+    border-radius: 50px;
+}
