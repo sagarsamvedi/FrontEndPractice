@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import './App.css'
 
 const App = () => {
@@ -6,7 +6,7 @@ const App = () => {
     <>
     <div>
       <h1>Hello, Welcome to Home Page</h1>
-      <h3>Math.floor(5/2)</h3>
+      <h3>{Math.floor(5/2)}</h3>
     </div>
     </>
   )
