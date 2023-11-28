@@ -1,13 +1,15 @@
 // import React from 'react'
+// import { useState } from 'react';
 import './App.css'
+import Person from './components/Person';
+import DriveCheck from './components/DriveCheck';
 
 const App = () => {
+
   return (
     <>
-    <div>
-      <h1>Hello, Welcome to Home Page</h1>
-      <h3>{Math.floor(5/2)}</h3>
-    </div>
+    {/* <DriveCheck></DriveCheck> */}
+    <Person></Person>
     </>
   )
 }
