@@ -5,7 +5,9 @@ import "./App.css";
 // import Props from "./components/Props";
 
 // import Counter from "./components/Counter";
-import AutoType from "./components/AutoType";
+// import AutoType from "./components/AutoType";
+
+import Information from "./components/Information";
 
 const App = () => {
   return (
@@ -23,7 +25,9 @@ const App = () => {
       {/* It shows usage of useState */}
       {/* <Counter/> */}
 
-      <AutoType/>
+      {/* <AutoType/> */}
+
+      <Information/>
 
     </>
   );
