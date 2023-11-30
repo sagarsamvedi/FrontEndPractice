@@ -7,7 +7,9 @@ import "./App.css";
 // import Counter from "./components/Counter";
 // import AutoType from "./components/AutoType";
 
-import Information from "./components/Information";
+// import Information from "./components/Information";
+
+import Products from "./components/Products";
 
 const App = () => {
   return (
@@ -27,7 +29,9 @@ const App = () => {
 
       {/* <AutoType/> */}
 
-      <Information/>
+      {/* <Information/> */}
+
+      <Products/>
 
     </>
   );

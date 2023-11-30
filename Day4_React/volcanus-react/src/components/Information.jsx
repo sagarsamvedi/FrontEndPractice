@@ -7,6 +7,9 @@ const Information = () => {
     function Update(){
         setPerson({name: document.querySelector('#name').value,age: document.querySelector('#age').value, email: document.querySelector('#email').value})
     }
+    function Reset(){
+      setPerson({name:'',age:null,email:''})
+    }
   return (
     <>
     <div className="information">
@@ -20,7 +23,8 @@ const Information = () => {
     <input type="text" placeholder="Enter Age" id = 'age' />
     <input type="email" placeholder="Enter Email" id = 'email' />
     </div>
-    <button onClick={Update}>Update</button>
+    <button className="btn" onClick={Update}>Update</button>
+    <button onClick={Reset}>Reset</button>
     </>
   )
 }
