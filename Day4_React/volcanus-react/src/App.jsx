@@ -17,9 +17,6 @@ const App = () => {
       {/* <DriveCheck></DriveCheck> */}
       {/* <Person></Person> */}
 
-
-
-
       {/* Renders the Props component and passes the prop name={'amit'} to demonstrate the use of props */}
       {/* The App component renders the Props component, showcasing how props can be passed from a parent component. */}
       {/* <Props name={'amit'}/> */}

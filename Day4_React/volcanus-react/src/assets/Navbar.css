@@ -1,0 +1,10 @@
+*{
+    color:white;
+    background-color: green;
+}
+
+.container{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
