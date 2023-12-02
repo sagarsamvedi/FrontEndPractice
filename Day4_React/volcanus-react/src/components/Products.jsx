@@ -70,7 +70,7 @@ const Products = () => {
         <input
           type="text"
           placeholder="Search by product title"
-          value={searchTerm}
+          // value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="form-control mx-2"
         />

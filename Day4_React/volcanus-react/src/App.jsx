@@ -9,7 +9,8 @@ import "./App.css";
 
 // import Information from "./components/Information";
 
-import Products from "./components/Products";
+// import Products from "./components/Products";
+import Use_effect from "./components/Use_effect";
 
 const App = () => {
   return (
@@ -28,7 +29,9 @@ const App = () => {
 
       {/* <Information/> */}
 
-      <Products/>
+      {/* <Products/> */}
+
+      <Use_effect/>
 
     </>
   );
