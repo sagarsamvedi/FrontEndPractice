@@ -1,5 +1,6 @@
 // import React from 'react';
 import "./App.css";
+
 // import Person from './components/Person';
 // import DriveCheck from './components/DriveCheck';
 // import Props from "./components/Props";
@@ -10,7 +11,9 @@ import "./App.css";
 // import Information from "./components/Information";
 
 // import Products from "./components/Products";
-import Use_effect from "./components/Use_effect";
+// import Use_effect from "./components/Use_effect";
+
+import Fetch_data from "./components/Fetch_data";
 
 const App = () => {
   return (
@@ -31,7 +34,9 @@ const App = () => {
 
       {/* <Products/> */}
 
-      <Use_effect/>
+      {/* <Use_effect/> */}
+
+      <Fetch_data/>
 
     </>
   );
