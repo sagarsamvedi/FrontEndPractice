@@ -13,7 +13,11 @@ import "./App.css";
 // import Products from "./components/Products";
 // import Use_effect from "./components/Use_effect";
 
-import Fetch_data from "./components/Fetch_data";
+// import Fetch_data from "./components/Fetch_data";
+
+
+// import Form from "./components/Form";
+import MultipleInput from "./components/MultipleInput";
 
 const App = () => {
   return (
@@ -36,8 +40,9 @@ const App = () => {
 
       {/* <Use_effect/> */}
 
-      <Fetch_data/>
-
+      {/* <Fetch_data/> */}
+      {/* <Form/> */}
+      <MultipleInput/>
     </>
   );
 };

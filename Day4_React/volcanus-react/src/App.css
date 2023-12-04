@@ -9,3 +9,53 @@
 h1{
   text-shadow: 2px 2px 10px rgb(104, 102, 96);
 }
+
+.title h2{
+  margin-top: 2rem;
+  color: orange;
+}
+
+.title span{
+  border-bottom: 2px dashed orange;
+  padding-bottom: 0.6rem;
+}
+.form-container{
+  color: wheat;
+  margin: 5rem 10rem ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  border: 2px solid orange;
+}
+
+.form-container button{
+  margin: 2px 2px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(70, 47, 4, 0.938);
+}
+
+.multiple-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.multiple-input button{
+  background-color: orange;
+  height: 40px;
+  width: fit-content;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.multiple-input{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
