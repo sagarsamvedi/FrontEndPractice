@@ -15,34 +15,53 @@ import "./App.css";
 
 // import Fetch_data from "./components/Fetch_data";
 
-
 // import Form from "./components/Form";
-import MultipleInput from "./components/MultipleInput";
+// import MultipleInput from "./components/MultipleInput";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Home from "./Router/Home";
+import Home from './Router/Home'
+import About from "./Router/About";
+import Contact from "./Router/Contact";
+import Career from "./Router/Career";
+import Routing from "./components/Routing";
 
 const App = () => {
   return (
     <>
-      {/* <DriveCheck></DriveCheck> */}
-      {/* <Person></Person> */}
+      <Router>
+        <Routing/>
+        <Routes>
+          <Route path={'/'} element={<Home/>} />
+          <Route path={"/about"} element={<About />} />
+          <Route path={"/career"} element={<Career />} />
+          <Route path={"/contact"} element={<Contact />} />
+          {/* <div> */}
+        {/* <DriveCheck></DriveCheck> */}
+          {/* <Person></Person> */}
 
-      {/* Renders the Props component and passes the prop name={'amit'} to demonstrate the use of props */}
-      {/* The App component renders the Props component, showcasing how props can be passed from a parent component. */}
-      {/* <Props name={'amit'}/> */}
+          {/* Renders the Props component and passes the prop name={'amit'} to demonstrate the use of props */}
+          {/* The App component renders the Props component, showcasing how props can be passed from a parent component. */}
+          {/* <Props name={'amit'}/> */}
 
-      {/* It shows usage of useState */}
-      {/* <Counter/> */}
+          {/* It shows usage of useState */}
+          {/* <Counter/> */}
 
-      {/* <AutoType/> */}
+          {/* <AutoType/> */}
 
-      {/* <Information/> */}
+          {/* <Information/> */}
 
-      {/* <Products/> */}
+          {/* <Products/> */}
 
-      {/* <Use_effect/> */}
+          {/* <Use_effect/> */}
 
-      {/* <Fetch_data/> */}
-      {/* <Form/> */}
-      <MultipleInput/>
+          {/* <Fetch_data/> */}
+          {/* <Form/> */}
+          {/* <MultipleInput/> */}
+      {/* </div> */}
+        </Routes>
+      </Router>
+
     </>
   );
 };

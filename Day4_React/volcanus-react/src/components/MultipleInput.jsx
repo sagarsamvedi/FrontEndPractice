@@ -28,7 +28,7 @@ const MultipleInput = () => {
       <div className="multiple-input">
       <div className="title">
           <h2>
-            Let's Learn <span> Multiple Form Handling</span> In React
+            Learn <span> Multiple Form Handling</span> In React
           </h2>
         </div>
         <form onSubmit={submitHandler}>
