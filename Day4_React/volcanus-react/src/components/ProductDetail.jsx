@@ -3,6 +3,9 @@ import { products } from "../product_data";
 import { useEffect } from "react";
 import { useState } from "react";
 import AutoType from "./AutoType";
+import Navigate from "./Navigate";
+
+
 
 const ProductDetail = () => {
   const [currentProductDetail, setcurrentProductDetail] = useState(null);
@@ -16,6 +19,7 @@ const ProductDetail = () => {
   return (
     <>
       {currentProductDetail ? (
+        <>
         <div className="product-detail">
           <div className="product">
             <h1>{currentProductDetail.name}</h1>
@@ -36,6 +40,11 @@ const ProductDetail = () => {
             />
           </div>
         </div>
+
+        <div className="navigate" style={{textAlign :'center'}}>
+          <Navigate/>
+        </div>
+        </>
       ) : (
         <div>
           <h1>Loading</h1>
