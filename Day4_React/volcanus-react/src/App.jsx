@@ -10,7 +10,7 @@ import "./App.css";
 
 // import Information from "./components/Information";
 
-// import Products from "./components/Products";
+import Products from "./components/Products";
 // import Use_effect from "./components/Use_effect";
 
 // import Fetch_data from "./components/Fetch_data";
@@ -20,22 +20,26 @@ import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Home from "./Router/Home";
-import Home from './Router/Home'
+// import Home from './Router/Home'
 import About from "./Router/About";
 import Contact from "./Router/Contact";
 import Career from "./Router/Career";
 import Routing from "./components/Routing";
+import ProductDetail from "./components/ProductDetail"
 
 const App = () => {
   return (
     <>
       <Router>
+        {/* nav bar component */}
         <Routing/>
+        
         <Routes>
-          <Route path={'/'} element={<Home/>} />
+          <Route path={'/'} element={<Products/>} />
           <Route path={"/about"} element={<About />} />
           <Route path={"/career"} element={<Career />} />
           <Route path={"/contact"} element={<Contact />} />
+          <Route path={"/product/:id"} element={<ProductDetail />} />
           {/* <div> */}
         {/* <DriveCheck></DriveCheck> */}
           {/* <Person></Person> */}
@@ -47,7 +51,7 @@ const App = () => {
           {/* It shows usage of useState */}
           {/* <Counter/> */}
 
-          {/* <AutoType/> */}
+          
 
           {/* <Information/> */}
 
@@ -60,6 +64,7 @@ const App = () => {
           {/* <MultipleInput/> */}
       {/* </div> */}
         </Routes>
+        
       </Router>
 
     </>

@@ -1,27 +1,29 @@
-*{
+* {
   color: rgb(255, 255, 255);
   background-color: black;
 }
+
 .card {
   padding: 2em;
 }
 
-h1{
+h1 {
   text-shadow: 2px 2px 10px rgb(104, 102, 96);
 }
 
-.title h2{
+.title h2 {
   margin-top: 2rem;
   color: orange;
 }
 
-.title span{
+.title span {
   border-bottom: 2px dashed orange;
   padding-bottom: 0.6rem;
 }
-.form-container{
+
+.form-container {
   color: wheat;
-  margin: 5rem 10rem ;
+  margin: 5rem 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +31,7 @@ h1{
   border: 2px solid orange;
 }
 
-.form-container button{
+.form-container button {
   margin: 2px 2px;
   width: 80px;
   height: 40px;
@@ -38,13 +40,13 @@ h1{
   background-color: rgba(70, 47, 4, 0.938);
 }
 
-.multiple-input{
+.multiple-input {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.multiple-input button{
+.multiple-input button {
   background-color: orange;
   height: 40px;
   width: fit-content;
@@ -53,9 +55,43 @@ h1{
   border-radius: 5px;
 }
 
-.multiple-input{
+.multiple-input {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  
+
+}
+
+.product-detail {
+  display: flex;
+  margin: 2rem;
+  background-color: yellow;
+}
+
+.product-img {
+  width: 400px;
+  height: 400px;
+}
+
+.product-img img{
+  box-shadow: 0px 0px 15px whitesmoke;
+}
+
+.product-price {
+  margin-left: 5px;
+  color: rgb(213, 213, 221);
+  font-family:Cambria, Cochin,serif;
+}
+
+.product-price span {
+  border: none;
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.product-des{
+  width: 50%;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 // import Navbar from "./Navbar";
 import { products } from "../product_data";
 import "../assets/Products.css";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -83,8 +84,7 @@ const Products = () => {
           <div className="products" key={data.id}>
             <div className="card" style={{ width: "18rem" }}>
               {/* Use curly braces for dynamic values */}
-              <img src={data.imgUrl} className="card-img-top" alt="" />
-
+              <Link to={`/product/${data.id}`}><img src={data.imgUrl} className="card-img-top" alt="" /></Link>
               <div className="card-body">
                 <h5 className="card-title">{data.name}</h5>
                 <h5 className="card-price" style={{ color: "#fff" }}>

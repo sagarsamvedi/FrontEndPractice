@@ -1,27 +1,25 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
+const AutoType = (props) => {
+  const text = `${props.description}`;
+  const [string, setString] = useState('');
 
-const AutoType = () => {
-    let text = 'Welcome to My WebSite';
+  useEffect(() => {
     let count = 0;
-    let string = '';
-    function autotype(){
-        if (count == text.length){
-            return
-        }
-        string += text[count++];
-        document.querySelector('.autotype').innerHTML = string;
-    }
-    useEffect(() => {
-        // Use useEffect to run the autotype function at intervals
-        const intervalId = setInterval(autotype, 100);
-    
-        // Clean up the interval when the component unmounts
-        return () => clearInterval(intervalId);
-      }); // Empty dependency array to run the effect only once
-  return (
-    <div className="autotype"></div>
-  )
-}
+    const intervalId = setInterval(() => {
+      if (count === text.length) {
+        clearInterval(intervalId);
+      } else {
+        setString((prevString) => prevString + text[count++]);
+      }
+    }, 50);
 
-export default AutoType
+    return () => clearInterval(intervalId);
+  }, [text]);
+
+  return (
+    <p className="autotype">{string}</p>
+  );
+};
+
+export default AutoType;
