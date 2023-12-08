@@ -1,10 +1,10 @@
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import MoneyState from "./Context/MoneyState";
 
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <MoneyState>
     <App />
-  
-)
+  </MoneyState>
+);

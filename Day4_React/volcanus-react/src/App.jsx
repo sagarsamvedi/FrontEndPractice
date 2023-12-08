@@ -34,7 +34,7 @@ const App = () => {
     <>
       <Router>
         {/* nav bar component */}
-        <IndianGov money={money}/>
+        <IndianGov />
         <Routing/>
         
         <Routes>

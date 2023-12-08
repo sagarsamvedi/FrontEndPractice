@@ -1,8 +1,9 @@
-import React from 'react'
-
-const People = ({money}) => {
+import { useContext } from 'react'
+import moneyContext from '../Context/MoneyContext'
+const People = () => {
+  console.log(useContext(moneyContext))
   return (
-    <div>People = {money}</div>
+    <div>People</div>
   )
 }
 
