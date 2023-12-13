@@ -26,15 +26,16 @@ import Contact from "./Router/Contact";
 import Career from "./Router/Career";
 import Routing from "./components/Routing";
 import ProductDetail from "./components/ProductDetail"
-import IndianGov from "./components/IndianGov";
+// import IndianGov from "./components/IndianGov";
+import TestCounter from "./test/TestCounter";
 
 const App = () => {
-  const money = 10000
   return (
     <>
       <Router>
         {/* nav bar component */}
-        <IndianGov />
+        {/* <IndianGov /> */}
+        <TestCounter></TestCounter>
         <Routing/>
         
         <Routes>
